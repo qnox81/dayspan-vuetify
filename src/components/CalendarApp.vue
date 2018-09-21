@@ -1,7 +1,7 @@
 <template>
 <div class="ds-expand ds-calendar-app">
 
-  <v-navigation-drawer fixed app
+  <v-navigation-drawer absolute app
     v-model="drawer"
     :clipped="$vuetify.breakpoint.lgAndUp">
 
@@ -17,7 +17,7 @@
 
   </v-navigation-drawer>
 
-  <v-toolbar app flat fixed
+  <v-toolbar app flat absolute
     class="ds-app-calendar-toolbar"
     color="white"
     :clipped-left="$vuetify.breakpoint.lgAndUp">
