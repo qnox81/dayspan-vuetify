@@ -1,21 +1,6 @@
 <template>
 <div class="ds-expand ds-calendar-app">
 
-  <v-navigation-drawer absolute app
-    v-model="drawer"
-    :clipped="$vuetify.breakpoint.lgAndUp">
-
-    <slot name="drawerTop"></slot>
-
-    <slot name="drawerPicker" :calendar="calendar" :picked="rebuild">
-      <div class="pa-3" v-if="calendar">
-        <ds-day-picker :span="calendar.span" @picked="rebuild"></ds-day-picker>
-      </div>
-    </slot>
-
-    <slot name="drawerBottom"></slot>
-
-  </v-navigation-drawer>
 
   <v-toolbar app flat absolute
     class="ds-app-calendar-toolbar"
