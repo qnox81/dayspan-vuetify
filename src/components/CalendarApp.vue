@@ -233,7 +233,7 @@ export default {
   },
 
   data: vm => ({
-    drawer: null,
+    drawer: false,
     optionsVisible: false,
     options: [],
     promptVisible: false,
@@ -285,7 +285,7 @@ export default {
 
     toolbarStyle() {
       let large = this.$vuetify.breakpoint.lgAndUp;
-
+      return { width: '0px' };
       return large ? this.styles.toolbar.large : this.styles.toolbar.small;
     },
 
